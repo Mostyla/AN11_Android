@@ -1,4 +1,4 @@
-package HomeTask5.Task1;
+package HomeTask5.Task2;
 
 public abstract class Transport {
 

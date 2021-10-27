@@ -1,4 +1,4 @@
-package HomeTask5.Task1;
+package HomeTask5.Task2;
 
 public class Terrestrial extends Transport {
 
@@ -7,8 +7,8 @@ public class Terrestrial extends Transport {
     private final int numberOfWheels;
     private final double fuelConsumption;
 
-    public Terrestrial(int power, int maxspeed, int weight, String model, int numberOfWheels, double fuelConsumption) {
-        super(power, maxspeed, weight, model);
+    public Terrestrial(int horsePower, int maxspeed, int weight, String model, int numberOfWheels, double fuelConsumption) {
+        super(horsePower, maxspeed, weight, model);
         this.numberOfWheels = numberOfWheels;
         this.fuelConsumption = fuelConsumption;
     }
@@ -19,5 +19,9 @@ public class Terrestrial extends Transport {
 
     public double getFuelConsumption() {
         return fuelConsumption;
+    }
+
+    public double getPower() {
+        return getHorsePower() * 0.74;
     }
 }
