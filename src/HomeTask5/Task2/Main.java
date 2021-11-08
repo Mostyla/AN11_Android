@@ -19,7 +19,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Тех. хар-ки военного самоёлта: ");
-        Military military = new Military(1000, 400, 10000, "ИЛ-76", 10, 1000, false, 0);
+        Military military = new Military(1000, 400, 10000, "ИЛ-76", 10, 1000, true, 0);
         military.displayInfo();
         System.out.println("Проверка боекомплекта самолёта: ");
         military.shot();
